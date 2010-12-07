@@ -12,7 +12,13 @@
 
 ActiveRecord::Schema.define(:version => 20101207124629) do
 
-# Could not dump table "products" because of following ArgumentError
-#   invalid date
+  create_table "products", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "image_url"
+    t.decimal  "price",       :precision => 8, :scale => 2
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
