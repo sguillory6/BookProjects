@@ -10,9 +10,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101207232748) do
+ActiveRecord::Schema.define(:version => 20101207233459) do
 
 # Could not dump table "carts" because of following ArgumentError
+#   invalid date
+
+# Could not dump table "line_items" because of following ArgumentError
 #   invalid date
 
 # Could not dump table "products" because of following ArgumentError
