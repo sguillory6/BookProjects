@@ -7,7 +7,7 @@ class Product < ActiveRecord::Base
     before_destroy :ensure_not_reference_by_any_line_item
 
     # Ensure that there are no line items referencing this product
-    def ensure_not_references_by_any_line_item
+    def ensure_not_reference_by_any_line_item
         if line_items.count.zero?
             return true
         else
